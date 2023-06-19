@@ -19,18 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 }) ;
 
-#Route::get('/', function () {
- #   return response()->json([
-   #     'message' => 'Welcome to the laravel API'
-    #]);
-#});
-
-//  Route::post('login', 'Api\AuthController@login');
-  //    Route::post('register', 'Api\AuthController@register');
-
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//return $request->user();
-//});
+ 
 
 Route::group(["prefix"=>"seller"],function(){
     Route::get("/get/{id}",[SellerController::class,"get"]);
