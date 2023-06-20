@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SellerController;
 use App\Http\Controllers\ProductsController;
-use App\Http\Controllers\Api\Api\AuthController;
+use App\Http\Controllers\Api\AuthController;
 /*
 
 
